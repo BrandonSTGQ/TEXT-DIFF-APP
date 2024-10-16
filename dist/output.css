@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.header2 {
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 40px;
+}
+
+.header {
+  background-color: #a901ec;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 40px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  width: 45%;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.formatted-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 50px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+#diffResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diff-line {
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.diff-line span {
+  white-space: pre-wrap;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.diff-line {
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  /* Usar fuente monoespaciada para mejor alineación */
+}
+
+
+
+
