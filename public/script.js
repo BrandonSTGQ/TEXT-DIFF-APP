@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const renderDiff = (differences) => {
-        // Limpiar resultados anteriores
+       
         diffText1.innerHTML = '';
         diffText2.innerHTML = '';
         let countDifferences1 = 0;
@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
         differences.forEach(part => {
             if (part.added) {
-                // Texto 2 tiene añadido
+               
                 const span2 = document.createElement('span');
                 span2.classList.add('red'); // Clase para el texto añadido (color rojo)
                 span2.textContent = part.value;
                 diffText2.appendChild(span2);
                 countDifferences2++;
             } else if (part.removed) {
-                // Texto 1 tiene eliminado
+               
                 const span1 = document.createElement('span');
                 span1.classList.add('red'); // Clase para el texto eliminado (color rojo)
                 span1.textContent = part.value;

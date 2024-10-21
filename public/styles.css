@@ -98,7 +98,7 @@ button {
     background-color: #f0f0f0;
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-family: monospace; /* Usar fuente monoespaciada para mejor alineación */
+    font-family: monospace; 
 }
 
 
@@ -131,70 +131,70 @@ button {
 
 
 .custom-textarea {
-    display: block; /* Para que tome todo el ancho disponible */
-    padding: 10px; /* Equivalente a p-2.5 */
-    width: 100%; /* w-full */
-    font-size: 0.875rem; /* text-sm */
-    color: #1f2937; /* text-gray-900 */
-    background-color: #f3f4f6; /* bg-gray-100 */
-    border-radius: 0.5rem; /* rounded-lg */
-    border: 1px solid #d1d5db; /* border border-gray-300 */
+    display: block; 
+    padding: 10px; 
+    width: 100%; 
+    font-size: 0.875rem; 
+    color: #1f2937; 
+    background-color: #f3f4f6; 
+    border-radius: 0.5rem; 
+    border: 1px solid #d1d5db;
 }
 
 .custom-textarea-2 {
-    display: block; /* Para que tome todo el ancho disponible */
-    padding: 10px; /* Equivalente a p-2.5 */
-    width: 100%; /* w-full */
-    font-size: 0.875rem; /* text-sm */
-    color: #1f2937; /* text-gray-900 */
-    background-color: #f3f4f6; /* bg-gray-100 */
-    border-radius: 0.5rem; /* rounded-lg */
-    border: 1px solid #d1d5db; /* border border-gray-300 */
+    display: block; 
+    padding: 10px; 
+    width: 100%;
+    font-size: 0.875rem; 
+    color: #1f2937; 
+    background-color: #f3f4f6;
+    border-radius: 0.5rem; 
+    border: 1px solid #d1d5db;
 }
 
 .custom-textarea:focus {
-    outline: none; /* Enfocar sin contorno */
-    box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.5); /* focus:ring-purple-600 */
-    border-color: #7c3aed; /* focus:border-purple-600 */
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.5); 
+    border-color: #7c3aed; 
 }
 
 /* Estilos para el modo oscuro */
 .dark .custom-textarea {
-    background-color: #e5e7eb; /* dark:bg-gray-200 */
-    border-color: #e5e7eb; /* dark:border-gray-200 */
-    color: white; /* dark:text-white */
+    background-color: #e5e7eb; 
+    border-color: #e5e7eb; 
+    color: white; 
 }
 
 .dark .custom-textarea::placeholder {
-    color: #9ca3af; /* dark:placeholder-gray-400 */
+    color: #9ca3af; 
 }
 
 .dark .custom-textarea:focus {
-    box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.5); /* dark:focus:ring-purple-600 */
-    border-color: #7c3aed; /* dark:focus:border-purple-600 */
+    box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.5); 
+    border-color: #7c3aed; 
 }
 
 
 .custom-textarea-2:focus {
-    outline: none; /* Enfocar sin contorno */
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); /* focus:ring-blue-500 */
-    border-color: #3b82f6; /* focus:border-blue-500 */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); 
+    border-color: #3b82f6; 
 }
 
 /* Estilos para el modo oscuro */
 .dark .custom-textarea-2 {
-    background-color: #e5e7eb; /* dark:bg-gray-200 */
-    border-color: #e5e7eb; /* dark:border-gray-200 */
-    color: white; /* dark:text-white */
+    background-color: #e5e7eb; 
+    border-color: #e5e7eb; 
+    color: white; 
 }
 
 .dark .custom-textarea-2::placeholder {
-    color: #9ca3af; /* dark:placeholder-gray-400 */
+    color: #9ca3af; 
 }
 
 .dark .custom-textarea-2:focus {
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); /* dark:focus:ring-blue-500 */
-    border-color: #3b82f6; /* dark:focus:border-blue-500 */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); 
+    border-color: #3b82f6; 
 }
 
 
@@ -203,109 +203,108 @@ button {
 
 
 .custom-button-format {
-    margin-top: 1.25rem; /* mt-5 */
-    margin-bottom: 1.25rem; /* mb-5 */
-    color: white; /* text-white */
-    background: linear-gradient(to right, #a901ec, #a855f7, #9333ea); /* bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 */
-    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
-    border-radius: 0.5rem; /* rounded-lg */
-    font-size: 0.875rem; /* text-sm */
-    font-weight: 500; /* font-medium */
-    text-align: center; /* text-center */
-    cursor: pointer; /* cursor: pointer */
-    transition: background 0.3s; /* transición suave para hover */
+    margin-top: 1.25rem; 
+    margin-bottom: 1.25rem; 
+    color: white; 
+    background: linear-gradient(to right, #a901ec, #a855f7, #9333ea); 
+    padding: 0.625rem 1.25rem; 
+    border-radius: 0.5rem;
+    font-size: 0.875rem; 
+    font-weight: 500;
+    text-align: center; 
+    cursor: pointer; 
+    transition: background 0.3s; 
     box-shadow: 0 10px 15px -3px rgba(98, 34, 132, 0.5), 0 4px 6px -2px rgba(98, 34, 132, 0.5); /* shadow-lg shadow-purple-500/50 */
 }
 
-/* Efecto hover */
 .custom-button-format:hover {
-    background: linear-gradient(to bottom right, #a901ec, #a855f7); /* hover:bg-gradient-to-br */
+    background: linear-gradient(to bottom right, #a901ec, #a855f7); 
 }
 
-/* Estilos para el modo oscuro */
+
 .dark .custom-button-format {
-    background: linear-gradient(to right, #3b82f6, #3b82f6, #3b82f6); /* Modifica según tus preferencias */
-    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.5), 0 4px 6px -2px rgba(30, 58, 138, 0.5); /* dark:shadow-purple-800/80 */
+    background: linear-gradient(to right, #3b82f6, #3b82f6, #3b82f6); 
+    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.5), 0 4px 6px -2px rgba(30, 58, 138, 0.5);
 }
 
-/* Efecto focus */
+
 .custom-button-format:focus {
     outline: none; /* focus:outline-none */
-    box-shadow: 0 0 0 4px rgba(98, 34, 132, 0.5); /* focus:ring-4 */
-    border-color: #9333ea; /* focus:ring-purple-300 */
+    box-shadow: 0 0 0 4px rgba(98, 34, 132, 0.5); 
+    border-color: #9333ea;
 }
 
 
 
 
 .custom-button-format2 {
-    margin-top: 1.25rem; /* mt-5 */
-    margin-bottom: 1.25rem; /* mb-2 */
-    color: white; /* text-white */
-    background: linear-gradient(to right, #3b82f6, #3b82f6, #3b82f6); /* bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 */
-    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
-    border-radius: 0.5rem; /* rounded-lg */
-    font-size: 0.875rem; /* text-sm */
-    font-weight: 500; /* font-medium */
-    text-align: center; /* text-center */
-    cursor: pointer; /* cursor: pointer */
-    transition: background 0.3s; /* transición suave para hover */
-    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5), 0 4px 6px -2px rgba(59, 130, 246, 0.5); /* shadow-lg shadow-blue-500/50 */
+    margin-top: 1.25rem; 
+    margin-bottom: 1.25rem; 
+    color: white; 
+    background: linear-gradient(to right, #3b82f6, #3b82f6, #3b82f6);
+    padding: 0.625rem 1.25rem; 
+    border-radius: 0.5rem; 
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5), 0 4px 6px -2px rgba(59, 130, 246, 0.5); 
 }
 
-/* Efecto hover */
+
 .custom-button-format2:hover {
-    background: linear-gradient(to bottom right, #3b82f6, #3b82f6); /* hover:bg-gradient-to-br */
+    background: linear-gradient(to bottom right, #3b82f6, #3b82f6); 
 }
 
-/* Estilos para el modo oscuro */
+
 .dark .custom-button-format2 {
-    background: linear-gradient(to right, #2563eb, #2563eb, #2563eb); /* Modifica según tus preferencias */
-    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.5), 0 4px 6px -2px rgba(30, 58, 138, 0.5); /* dark:shadow-purple-800/80 */
+    background: linear-gradient(to right, #2563eb, #2563eb, #2563eb); 
+    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.5), 0 4px 6px -2px rgba(30, 58, 138, 0.5); 
 }
 
-/* Efecto focus */
+
 .custom-button-format2:focus {
-    outline: none; /* focus:outline-none */
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-4 */
-    border-color: #60a5fa; /* focus:ring-blue-300 */
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); 
+    border-color: #60a5fa; 
 }
 
 
 
 .custom-button-compare {
-    margin: 0 auto; /* mx-auto */
-    color: white; /* text-white */
-    background-color: #1d4ed8; /* bg-blue-700 */
-    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
-    border-radius: 9999px; /* rounded-full */
-    font-size: 0.875rem; /* text-sm */
-    font-weight: 500; /* font-medium */
-    margin-bottom: 0.5rem; /* mb-2 */
-    cursor: pointer; /* cursor: pointer */
-    transition: background 0.3s; /* transición suave para hover */
+    margin: 0 auto; 
+    color: white;
+    background-color: #1d4ed8; 
+    padding: 0.625rem 1.25rem; 
+    border-radius: 9999px; 
+    font-size: 0.875rem; 
+    font-weight: 500;
+    margin-bottom: 0.5rem; 
+    cursor: pointer; 
+    transition: background 0.3s; 
 }
 
-/* Efecto hover */
+
 .custom-button-compare:hover {
-    background-color: #1e40af; /* hover:bg-blue-800 */
+    background-color: #1e40af;
 }
 
-/* Estilos para el modo oscuro */
+
 .dark .custom-button-compare {
-    background-color: #2563eb; /* dark:bg-blue-600 */
+    background-color: #2563eb; 
 }
 
-/* Efecto hover en modo oscuro */
+
 .dark .custom-button-compare:hover {
-    background-color: #1d4ed8; /* dark:hover:bg-blue-700 */
+    background-color: #1d4ed8; 
 }
 
-/* Estilo focus */
+
 .custom-button-compare:focus {
-    outline: none; /* focus:outline-none */
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-4 */
-    border-color: #60a5fa; /* focus:ring-blue-300 */
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); 
+    border-color: #60a5fa; 
 }
 
 
@@ -331,12 +330,12 @@ button {
 
 
 .red {
-    color: red; /* Color del texto rojo */
-    background-color: rgba(255, 99, 71, 0.3); /* Fondo rojo claro */
+    color: red; 
+    background-color: rgba(255, 99, 71, 0.3); 
 }
 
 .green {
-    color: green; /* Color del texto verde */
-    background-color: rgba(144, 238, 144, 0.3); /* Fondo verde claro */
+    color: green; 
+    background-color: rgba(144, 238, 144, 0.3); 
 }
 
