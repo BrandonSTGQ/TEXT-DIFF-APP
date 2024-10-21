@@ -328,3 +328,15 @@ button {
 .navbar-options{
     outline: none;
 }
+
+
+.red {
+    color: red; /* Color del texto rojo */
+    background-color: rgba(255, 99, 71, 0.3); /* Fondo rojo claro */
+}
+
+.green {
+    color: green; /* Color del texto verde */
+    background-color: rgba(144, 238, 144, 0.3); /* Fondo verde claro */
+}
+

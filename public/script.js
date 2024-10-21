@@ -72,38 +72,40 @@ document.addEventListener('DOMContentLoaded', () => {
         diffText2.innerHTML = '';
         let countDifferences1 = 0;
         let countDifferences2 = 0;
-
+    
         differences.forEach(part => {
             if (part.added) {
                 // Texto 2 tiene añadido
                 const span2 = document.createElement('span');
-                span2.classList.add('red');
+                span2.classList.add('red'); // Clase para el texto añadido (color rojo)
                 span2.textContent = part.value;
                 diffText2.appendChild(span2);
                 countDifferences2++;
             } else if (part.removed) {
                 // Texto 1 tiene eliminado
                 const span1 = document.createElement('span');
-                span1.classList.add('red');
+                span1.classList.add('red'); // Clase para el texto eliminado (color rojo)
                 span1.textContent = part.value;
                 diffText1.appendChild(span1);
                 countDifferences1++;
             } else {
                 // Parte igual en ambos textos
                 const span1 = document.createElement('span');
-                span1.classList.add('green');
-                span1.textContent = part.value;
+                span1.classList.add('green'); // Clase para el texto igual (color verde)
+                span1.textContent = part.value; // Muestra el texto igual
                 diffText1.appendChild(span1);
-
+    
                 const span2 = document.createElement('span');
-                span2.classList.add('green');
-                span2.textContent = part.value;
+                span2.classList.add('green'); // Clase para el texto igual (color verde)
+                span2.textContent = part.value; // Muestra el texto igual
                 diffText2.appendChild(span2);
             }
         });
-
+    
         // Mostrar el número de diferencias en cada texto
         diffCount1.textContent = `Diferencias encontradas Texto 1: ${countDifferences1}`;
         diffCount2.textContent = `Diferencias encontradas Texto 2: ${countDifferences2}`;
     };
+    
+    
 });
