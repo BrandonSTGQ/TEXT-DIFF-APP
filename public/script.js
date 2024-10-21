@@ -77,32 +77,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (part.added) {
                
                 const span2 = document.createElement('span');
-                span2.classList.add('red'); // Clase para el texto añadido (color rojo)
+                span2.classList.add('red'); 
                 span2.textContent = part.value;
                 diffText2.appendChild(span2);
                 countDifferences2++;
             } else if (part.removed) {
                
                 const span1 = document.createElement('span');
-                span1.classList.add('red'); // Clase para el texto eliminado (color rojo)
+                span1.classList.add('red'); 
                 span1.textContent = part.value;
                 diffText1.appendChild(span1);
                 countDifferences1++;
             } else {
-                // Parte igual en ambos textos
+               
                 const span1 = document.createElement('span');
-                span1.classList.add('green'); // Clase para el texto igual (color verde)
-                span1.textContent = part.value; // Muestra el texto igual
+                span1.classList.add('green'); 
+                span1.textContent = part.value; 
                 diffText1.appendChild(span1);
     
                 const span2 = document.createElement('span');
-                span2.classList.add('green'); // Clase para el texto igual (color verde)
-                span2.textContent = part.value; // Muestra el texto igual
+                span2.classList.add('green'); 
+                span2.textContent = part.value; 
                 diffText2.appendChild(span2);
             }
         });
     
-        // Mostrar el número de diferencias en cada texto
+        
         diffCount1.textContent = `Diferencias encontradas Texto 1: ${countDifferences1}`;
         diffCount2.textContent = `Diferencias encontradas Texto 2: ${countDifferences2}`;
     };
