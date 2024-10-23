@@ -12,7 +12,7 @@
 .header2 {
     background-color: #007BFF; 
     color: white; 
-    display: flex; 
+    display: flex;
     align-items: center; 
     padding: 5px 10px; 
     border-radius: 0.5rem 0.5rem 0 0; 
@@ -23,6 +23,7 @@
     width: 20px; 
     height: 20px; 
     margin-right: 8px; 
+    margin-left: 6px;
 }
 
 h1, h2 {
@@ -112,20 +113,6 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -339,3 +326,26 @@ button {
     background-color: rgba(144, 238, 144, 0.3); 
 }
 
+.cleanBtn {
+    display: flex;
+    padding: 0.5rem 0.5rem; 
+    color: white;
+    background-color: #dc2626; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.cleanBtn:hover {
+    background-color: #b91c1c; 
+}
+
+.dark .cleanBtn {
+    background-color: #dc2626; 
+}
+
+.dark .cleanBtn:hover {
+    background-color: #b91c1c;
+}

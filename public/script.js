@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const diffText2 = document.getElementById('diffText2');
     const diffCount1 = document.getElementById('diffCount1');
     const diffCount2 = document.getElementById('diffCount2');
+    const cleanBtn = document.getElementById('cleanBtn');
 
     let savedText1 = '';
     let savedText2 = '';
@@ -42,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     compareBtn.addEventListener('click', () => {
         fetch('http://localhost:4000/compare', {
-            //http://localhost:4000/compare
             // https://gothic-dis-monroe-symposium.trycloudflare.com 
             method: 'POST',
             headers: {
@@ -107,5 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
         diffCount2.textContent = `Diferencias encontradas Texto 2: ${countDifferences2}`;
     };
     
-    
+    cleanBtn.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        inputText1.value = ''; 
+        inputText2.value = '';  
+    });
+
 });
