@@ -110,7 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
     cleanBtn.addEventListener('click', (event) => {
         event.preventDefault(); 
         inputText1.value = ''; 
-        inputText2.value = '';  
+        inputText2.value = '';
+        formattedText1.textContent = '';
+        formattedText2.textContent = '';  
+        diffText1.textContent = '';
+        diffText2.textContent = '';
+        diffCount1.textContent = '';
+        diffCount2.textContent = '';
     });
 
 });
