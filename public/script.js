@@ -1,54 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const inputText1 = document.getElementById('inputText1');
     const inputText2 = document.getElementById('inputText2');
-    const formatBtn1 = document.getElementById('formatBtn1');
-    const formatBtn2 = document.getElementById('formatBtn2');
+    const compareBtn = document.getElementById('compareBtn');
     const formattedText1 = document.getElementById('formattedText1');
     const formattedText2 = document.getElementById('formattedText2');
-    const compareBtn = document.getElementById('compareBtn');
     const diffText1 = document.getElementById('diffText1');
     const diffText2 = document.getElementById('diffText2');
     const diffCount1 = document.getElementById('diffCount1');
     const diffCount2 = document.getElementById('diffCount2');
     const cleanBtn = document.getElementById('cleanBtn');
 
-    let savedText1 = '';
-    let savedText2 = '';
-
     const formatText = (text) => {
         return text.replace(/\s+/g, '');
     };
 
-    formatBtn1.addEventListener('click', () => {
-        const text = inputText1.value;
-        const formatted = formatText(text);
-        savedText1 = formatted;
-        formattedText1.textContent = formatted;
-        checkEnableCompare();
-    });
-
-    formatBtn2.addEventListener('click', () => {
-        const text = inputText2.value;
-        const formatted = formatText(text);
-        savedText2 = formatted;
-        formattedText2.textContent = formatted;
-        checkEnableCompare();
-    });
-
-    const checkEnableCompare = () => {
-        if (savedText1 && savedText2) {
-            compareBtn.disabled = false;
-        }
-    };
-
     compareBtn.addEventListener('click', () => {
+        const text1 = inputText1.value;
+        const text2 = inputText2.value;
+
+        // Formatear los textos
+        const formattedText1Value = formatText(text1);
+        const formattedText2Value = formatText(text2);
+        
+        formattedText1.textContent = formattedText1Value;
+        formattedText2.textContent = formattedText2Value;
+
+        // Enviar los textos formateados al servidor
         fetch('http://localhost:4000/compare', {
-            // https://gothic-dis-monroe-symposium.trycloudflare.com 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ text1: savedText1, text2: savedText2 })
+            body: JSON.stringify({ text1: formattedText1Value, text2: formattedText2Value })
         })
         .then(response => response.json())
         .then(data => {
@@ -67,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const renderDiff = (differences) => {
-       
         diffText1.innerHTML = '';
         diffText2.innerHTML = '';
         let countDifferences1 = 0;
@@ -75,21 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
         differences.forEach(part => {
             if (part.added) {
-               
                 const span2 = document.createElement('span');
                 span2.classList.add('red'); 
                 span2.textContent = part.value;
                 diffText2.appendChild(span2);
                 countDifferences2++;
             } else if (part.removed) {
-               
                 const span1 = document.createElement('span');
                 span1.classList.add('red'); 
                 span1.textContent = part.value;
                 diffText1.appendChild(span1);
                 countDifferences1++;
             } else {
-               
                 const span1 = document.createElement('span');
                 span1.classList.add('green'); 
                 span1.textContent = part.value; 
@@ -102,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     
-        
         diffCount1.textContent = `Diferencias encontradas Texto 1: ${countDifferences1}`;
         diffCount2.textContent = `Diferencias encontradas Texto 2: ${countDifferences2}`;
     };
@@ -118,5 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
         diffCount1.textContent = '';
         diffCount2.textContent = '';
     });
-
 });

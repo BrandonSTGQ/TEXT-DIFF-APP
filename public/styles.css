@@ -52,6 +52,7 @@ textarea {
 button {
     padding: 10px 20px;
     cursor: pointer;
+    font-family: 'flarefound', sans-serif;
 }
 
 .formatted-box {
@@ -348,4 +349,16 @@ button {
 
 .dark .cleanBtn:hover {
     background-color: #b91c1c;
+}
+
+
+@font-face {
+    font-family: 'flarefound';
+    src: url('./assets/fonts/OfficinaSansStd-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'flarefound', sans-serif;
 }
