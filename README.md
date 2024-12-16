@@ -25,5 +25,5 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
    
     Ingresa a:  http://localhost:4000/
 
-4. inizializar la aplicacion con : node server.js  , tambien puede funcionar. 
+    4. opcional: inicializar la aplicacion con  node server.js. 
 
